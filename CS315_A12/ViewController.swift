@@ -6,6 +6,7 @@
 //
 
 import UIKit;
+import AVFoundation;
 
 class ViewController: UIViewController
 {
@@ -16,21 +17,72 @@ class ViewController: UIViewController
     {
         super.viewDidLoad();
         // Do any additional setup after loading the view.
+        criticalLabel.isHidden = true;
     }
     
     @IBAction func buttonGO()
     {
-        rollDice();
+        rollDice(i:0);
     }
     
-    func rollDice()
+    override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?)
     {
-        print("Rolled");
+        if (motion == .motionShake)
+        {
+            rollDice(i:1);
+        }
+    }
+    
+    var audioPlayer: AVAudioPlayer?
+    
+    func rollDice(i: Int)
+    {
+        switch(i)
+        {
+        case 0:
+            print("Rolled");
+//            let pathToSound = Bundle.main.path(forResource: "rolldice", ofType: "mp3")!;
+            break;
+        case 1:
+            print("Shaken");
+//            let pathToSound = Bundle.main.path(forResource: "torpedo", ofType: "mp3")!;
+            break;
+        default:
+            break;
+        }
         
         let rolledNum = Int.random(in: 1...20);
         let imageName = "d\(rolledNum)";
         
-        diceImageView.image = UIImage(named: imageName);
+        switch rolledNum
+        {
+        case 1:
+//            let pathToSound = Bundle.main.path(forResource: "failwah", ofType: "mp3")!;
+            criticalLabel.text = "Oof";
+            criticalLabel.isHidden = false;
+            break;
+        case 20:
+//            let pathToSound = Bundle.main.path(forResource: "zfanfare", ofType: "mp3")!;
+            criticalLabel.text = "Nice";
+            criticalLabel.isHidden = false;
+            break;
+        default:
+            criticalLabel.isHidden = true;
+            break;
+        }
         
+//        let url = URL(fileURLWithPath: pathToSound);
+//
+//        do
+//        {
+//            audioPlayer = try AVAudioPlayer(contentsOf: url);
+//            audioPlayer?.play();
+//        }
+//        catch
+//        {
+//            print("error babe");
+//        }
+        
+        diceImageView.image = UIImage(named: imageName);
     }
 }
