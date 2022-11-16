@@ -37,17 +37,17 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="XGS-6N-nEd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1Ab-Fc-aqR"/>
-                            <constraint firstItem="u2k-xw-2Wt" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="24U-4D-bhF"/>
-                            <constraint firstItem="XGS-6N-nEd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="155" id="7jT-uD-81f"/>
-                            <constraint firstItem="u2k-xw-2Wt" firstAttribute="centerX" secondItem="XGS-6N-nEd" secondAttribute="centerX" id="7va-gj-2D2"/>
-                            <constraint firstItem="u2k-xw-2Wt" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="9hl-zg-tGy"/>
-                            <constraint firstItem="Gci-91-REs" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="CgR-Jr-quA"/>
-                            <constraint firstItem="Gci-91-REs" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="187" id="G0A-xm-D0Z"/>
-                            <constraint firstItem="Gci-91-REs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="h7k-ZS-mfB"/>
-                            <constraint firstItem="u2k-xw-2Wt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="rC4-h3-eID"/>
-                            <constraint firstItem="Gci-91-REs" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="uhM-33-gWd"/>
-                            <constraint firstItem="XGS-6N-nEd" firstAttribute="top" secondItem="Gci-91-REs" secondAttribute="bottom" constant="35" id="wud-MQ-edR"/>
+                            <constraint firstItem="u2k-xw-2Wt" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="2kW-Ox-zp7"/>
+                            <constraint firstItem="Gci-91-REs" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="3Ap-Wr-MKN"/>
+                            <constraint firstItem="Gci-91-REs" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="187" id="8pi-J9-R4H"/>
+                            <constraint firstItem="XGS-6N-nEd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AzB-4n-IRs"/>
+                            <constraint firstItem="u2k-xw-2Wt" firstAttribute="centerX" secondItem="Gci-91-REs" secondAttribute="centerX" id="BKO-Mc-a9J"/>
+                            <constraint firstItem="u2k-xw-2Wt" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Fp5-P1-jFA"/>
+                            <constraint firstItem="XGS-6N-nEd" firstAttribute="top" secondItem="Gci-91-REs" secondAttribute="bottom" constant="35" id="HZt-tM-z5C"/>
+                            <constraint firstItem="u2k-xw-2Wt" firstAttribute="centerX" secondItem="XGS-6N-nEd" secondAttribute="centerX" id="IGT-J1-dHn"/>
+                            <constraint firstItem="Gci-91-REs" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="MOc-tw-45Z"/>
+                            <constraint firstItem="u2k-xw-2Wt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="NvD-uw-So0"/>
+                            <constraint firstItem="XGS-6N-nEd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="155" id="Rbd-jn-7Gy"/>
                         </constraints>
                     </view>
                     <connections>
